@@ -36,7 +36,7 @@ public sealed class FileReaderModule : ChatBoxModule
         }
     }
 
-    [ModuleUpdate(ModuleUpdateMode.Custom)]
+    [ModuleUpdate(ModuleUpdateMode.ChatBox)]
     private void updateVariables()
     {
         if (IsValidFilePath())
@@ -95,3 +95,4 @@ public sealed class FileReaderModule : ChatBoxModule
     {
         TextUpdate
     }
+}
